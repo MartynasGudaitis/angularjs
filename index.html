@@ -54,9 +54,15 @@
   <!-- End of Navbar -->
 
   <div id="main" ng-controller="MainController">
+
     <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-2">
+            <button type="button" class="btn  btn-primary" ng-click="showData = !showData">Toggle Data</button>            
+        </div>
+      </div>
       <div class="row">
-        <div class="card m-2 col-sm-12 col-md-3" ng-repeat="person in people">
+        <div class="card m-2 col-sm-12 col-md-3" ng-repeat="person in people" ng-show="showData == false">
           <div class="card-block">
             <h2 class="card-title">
               {{ person.firstName + ' ' + person.lastName }}
@@ -73,8 +79,8 @@
 
 </body>
 <script src="js/angular.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.3/ui-bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.3/ui-bootstrap-tpls.min.js"></script>
 <script src="app.js"></script>
 <script src="js/factories/peopleFactory.js"></script>
 <script src="js/controllers/mainController.js"></script>
