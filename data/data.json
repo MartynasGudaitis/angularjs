@@ -1,0 +1,23 @@
+[
+    {
+        "firstName": "Martynas",
+        "lastName": "Gudaitis",
+        "age" : 20,
+        "date" : "January 13th",
+        "salary" : 219
+    },
+    {
+        "firstName": "Ilona",
+        "lastName": "Gudaitienė",
+        "age" : 53,
+        "date" : "March 2nd",
+        "salary" : 650
+    },
+    {
+        "firstName": "Gediminas",
+        "lastName": "Gudaitis",
+        "age" : 52,
+        "date" : "November 28th",
+        "salary" : 159
+    }
+]
